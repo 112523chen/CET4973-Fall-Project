@@ -1,13 +1,28 @@
-# CET4973-Fall-Project
-
-## Project Name
-
-**Project ....** (To be placed)
+# CET4973-Fall-Project (To Be Updated)
 
 ## Project Description
 
-(To be placed)
+<span style="background:#798897; color:white">To Be Updated<span>
 
-## Data Sets
+## Data Source
 
-(To be placed)
+<span style="background:#798897; color:white">To Be Updated<span>
+
+## Technologies
+
+<span style="background:#798897; color:white">To Be Updated<span>
+
+## Contributors
+
+`Alex Chen`
+**[@112523chen](https://github.com/112523chen)**
+
+`Allen Li`
+**[@](https://github.com/112523chen/CET4973-Fall-Project/edit/master/README.md)**
+
+`Safraaz Prashad`
+**[@](https://github.com/112523chen/CET4973-Fall-Project/edit/master/README.md)**
+
+## File Directory
+
+<span style="background:#798897; color:white">To Be Updated<span>
