@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+important_features = open("./src/helpers/importantFeatures.txt", "r").read().split("\n")[:-1]
 
 #Create helper DataFrame
 def create_df(data, important_columns, flag):
@@ -22,26 +23,17 @@ def get_dummies(df):
     return df
 
 #Convert User Input Into Array
-def convert_input(data, important_columns, input_array, not_important_features):
+def convert_input(data, important_columns, input_array, important_features):
     df = create_df(data, important_columns, False)
     df2 = pd.DataFrame(np.vstack((df.values, input_array)), columns=df.columns)
     df2 = get_dummies(df2)
-    borough = f"neighbourhood_cleansed_{input_array[3]}"
-    neighborhood = f"neighbourhood_group_cleansed_{input_array[4]}"
-    not_important_features.append(borough)
-    not_important_features.append(neighborhood)
-    df2 = df2.drop(not_important_features, axis=1)
-
-    # for c in df2.columns:
-    #     if c not in important_features:
-    #         print(c)
-
+    df2 = df2[important_features]
     input_data = df2.iloc[-1].values
     return input_data
 
 #Making prediction: get_prediction
-def get_prediction(model, data, important_columns, not_important_features, input_array):
-    input_data = convert_input(data, important_columns, input_array, not_important_features)
+def get_prediction(model, data, important_columns, important_features, input_array):
+    input_data = convert_input(data, important_columns, input_array, important_features)
     prediction = model.predict([input_data])
     return prediction
 
