@@ -7,6 +7,7 @@ from src.helpers.functions import *
 data = pd.read_csv("src/data/listings_Sep_22.csv", low_memory=False)
 model = pickle.load(open('./src/model/reducedLinearRegressionModel.pkl','rb'))
 not_important_features = open("./src/helpers/notImportantFeatures.txt", "r").read().split("\n")[:-1]
+important_features = open("./src/helpers/importantFeatures.txt", "r").read().split("\n")[:-1]
 important_columns = ['host_location','host_response_time','host_response_rate','neighbourhood_cleansed','neighbourhood_group_cleansed','latitude','longitude','property_type','room_type','accommodates','bedrooms','beds','instant_bookable',]
 df = create_df(data, important_columns, True)
 
@@ -43,5 +44,5 @@ with c3:
     st.header("Prediction")
     if st.button("Make Prediction"):
         input_array = np.array([hostLocation, hostResponseTime, hostResponseRate, borough, neighborhood, lat, log, propertyType, roomType, maxCapacity, numberOfBedrooms, numberOfBeds, isInstantBookable], dtype=object)
-        prediction = get_prediction(model, data, important_columns, not_important_features, input_array)[0]
+        prediction = get_prediction(model, data, important_columns, important_features, input_array)[0]
         st.header(f"The predicted price for this listing for one day is ${round(prediction, 2)}")
