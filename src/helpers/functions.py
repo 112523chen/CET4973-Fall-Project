@@ -26,9 +26,16 @@ def convert_input(data, important_columns, input_array, not_important_features):
     df = create_df(data, important_columns, False)
     df2 = pd.DataFrame(np.vstack((df.values, input_array)), columns=df.columns)
     df2 = get_dummies(df2)
-    not_important_features.append('neighbourhood_cleansed_Manhattan')
-    not_important_features.append('neighbourhood_group_cleansed_Harlem')
+    borough = f"neighbourhood_cleansed_{input_array[3]}"
+    neighborhood = f"neighbourhood_group_cleansed_{input_array[4]}"
+    not_important_features.append(borough)
+    not_important_features.append(neighborhood)
     df2 = df2.drop(not_important_features, axis=1)
+
+    # for c in df2.columns:
+    #     if c not in important_features:
+    #         print(c)
+
     input_data = df2.iloc[-1].values
     return input_data
 
