@@ -2,15 +2,15 @@
 
 ## Project Description
 
-<span style="background:#798897; color:white">To Be Updated<span>
+Create a Supervised Machine Learning model to predict a listing price for an Airbnb in NYC
 
 ## Data Source
 
-<span style="background:#798897; color:white">To Be Updated<span>
+[Insideairbnb](http://insideairbnb.com)
 
 ## Technologies
 
-<span style="background:#798897; color:white">To Be Updated<span>
+[Pandas](https://pandas.pydata.org), [Numpy](https://numpy.org), [Matplotlib](https://matplotlib.org), [Scikit-Learn](https://scikit-learn.org/stable/)
 
 ## Contributors
 
@@ -22,7 +22,3 @@
 
 `Safraaz Prashad`
 **[@](https://github.com/112523chen/CET4973-Fall-Project/edit/master/README.md)**
-
-## File Directory
-
-<span style="background:#798897; color:white">To Be Updated<span>
