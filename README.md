@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Create a Supervised Machine Learning model to predict a listing price for an Airbnb in NYC
+Create a web application that predict a listing price for a new Airbnb in NYC using supervised machine learning
 
 ## Data Source
 
@@ -18,7 +18,7 @@ Create a Supervised Machine Learning model to predict a listing price for an Air
 **[@112523chen](https://github.com/112523chen)**
 
 `Allen Li`
-**[@](https://github.com/112523chen/CET4973-Fall-Project/edit/master/README.md)**
+**[@ELuciel](https://github.com/ELuciel)**
 
 `Safraaz Prashad`
-**[@](https://github.com/112523chen/CET4973-Fall-Project/edit/master/README.md)**
+**[@SafraazP](https://github.com/SafraazP)**
