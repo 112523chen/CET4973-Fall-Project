@@ -1,5 +1,7 @@
 # CET4973 Fall 2022 Project 
 
+![Demo Image](https://user-images.githubusercontent.com/85437095/209639233-63fbaf83-84ed-487b-a5f0-d4a75db3fdea.png)
+
 ## Project Description
 
 Create a web application that predict a listing price for a new Airbnb in NYC using supervised machine learning
