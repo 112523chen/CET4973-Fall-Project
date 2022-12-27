@@ -1,4 +1,4 @@
-# CET4973-Fall-Project (To Be Updated)
+# CET4973 Fall 2022 Project 
 
 ## Project Description
 
